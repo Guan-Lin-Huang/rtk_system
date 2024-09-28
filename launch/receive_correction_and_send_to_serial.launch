@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <node pkg="rtk_system" type="combined.py" name="ntrip_ros" output="screen" respawn ="true">
+ 	  <param name="rtcm_topic" value="/rtcm"/>
+ 	  <param name="ntrip_server" value="rtk2go.com:2101"/>
+ 	  <param name="ntrip_user" value="a98sa3600@gmail.com"/>
+ 	  <param name="ntrip_pass" value="juang92889"/>
+ 	  <param name="ntrip_stream" value="NCKU-meclab"/>
+ 	  <param name="nmea_gga" value="$GPGGA,093913.617,2259.800,N,12013.354,E,1,12,1.0,0.0,M,0.0,M,,*68"/>
+	  <param name="port" value="/dev/ttyACM0"/>
+	  <param name="baud" value="9600"/>
+  </node>
+
+</launch>
